@@ -44,5 +44,5 @@ Notable modules in this project include: <br>
   - Express | HTTP server
   - Moment | Reliable and easy to use module for getting date and time information
 - Frontend and backend
-  - Axios | External API request
+  - Axios | External API requests
   - Dotenv | Environment variable managment
