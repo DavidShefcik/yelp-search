@@ -2,7 +2,7 @@ version: "3"
 
 services:
   backend:
-    container_name: "backend"
+    container_name: "yelp_backend"
     image: node:12
     user: "root"
     command: yarn workspace backend dev
@@ -15,6 +15,7 @@ services:
     working_dir: /root/backend
   frontend:
     image: node:12
+    container_name: "yelp_frontend"
     user: "root"
     command: yarn workspace frontend dev
     networks:
