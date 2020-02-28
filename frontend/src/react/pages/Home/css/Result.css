@@ -1,0 +1,80 @@
+/* Result CSS */
+.container {
+  display: inline-block;
+}
+.topContainer {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 5px;
+}
+.standOut {
+  color: #2196f3;
+  font-weight: 500;
+}
+.topLine {
+  border-bottom: 0;
+  border-top: 1px solid #d32323;
+  width: 40%;
+  margin: 0 2px;
+}
+.box {
+  padding: 5px 0;
+}
+.mainContainer {
+  padding: 5px;
+  width: 100%;
+}
+.image {
+  width: 30%;
+  justify-self: center;
+  padding: 5px;
+  border-radius: 4%;
+}
+.noImage {
+  width: 100%;
+}
+.normal {
+  width: calc(70% - 10px);
+}
+.infoContainer {
+  width: 100%;
+  text-align: left;
+}
+.buttonContainer {
+  width: 100%;
+  text-align: right;
+  padding: 5px;
+}
+.buttonContainer a, .buttonContainer a:hover, .buttonContainer a:focus {
+  text-decoration: none;
+}
+.yelpButton {
+  width: auto;
+}
+@media screen and (max-width: 768px) {
+  .topLine {
+    width: 60%;
+  }
+  .image {
+    width: 45%;
+    display: block;
+    margin: auto;
+  }
+  .normal, .noImage {
+    width: 100%;
+    text-align: center;
+  }
+  .infoContainer, .buttonContainer {
+    width: 100%;
+    text-align: center;
+    align-content: center !important;
+  }
+  .buttonContainer {
+    padding: 10px 0;
+  }
+  .yelpButton {
+    width: 80%;
+  }
+}

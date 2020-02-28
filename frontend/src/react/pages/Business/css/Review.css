@@ -1,0 +1,35 @@
+/* Review CSS */
+.container {
+  flex-grow: 1;
+  min-height: auto;
+}
+.reviewTitle {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.standOut {
+  color: #2196f3;
+  font-weight: 500;
+}
+.hover { cursor: pointer; }
+.reviewContainer {
+  text-align: left;
+  padding: 5px;
+}
+.line {
+  border-bottom: 0;
+  border-top: 1px solid #d32323;
+  width: 30%;
+  margin: 8px auto;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .reviewContainer {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .line {
+    width: 40%;
+  }
+}

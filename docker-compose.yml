@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  backend:
+    container_name: "backend"
+    image: node:12
+    user: "root"
+    command: yarn workspace backend dev
+    networks:
+      - yelpapp
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/root/backend:consistent
+    working_dir: /root/backend
+  frontend:
+    image: node:12
+    user: "root"
+    command: yarn workspace frontend dev
+    networks:
+      - yelpapp
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/root/frontend:consistent
+    working_dir: /root/frontend
+    depends_on:
+      - backend
+
+networks: 
+  yelpapp:

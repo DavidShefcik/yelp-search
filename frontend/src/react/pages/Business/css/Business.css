@@ -1,0 +1,28 @@
+/* Business Page CSS */
+.grid {
+  min-height: calc(100vh - 48px);
+  width: 100%;
+}
+.container {
+  padding-top: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  justify-self: flex-start;
+  margin-bottom: 10px;
+}
+.container a, .container a:hover, .container a:focus {
+  color: white;
+  text-decoration: none;
+}
+.backButton {
+  width: auto;
+}
+.contentGrid {
+  flex-grow: 1;
+}
+@media screen and (max-width: 768px) {
+  .backButton {
+    width: 80%;
+  }
+}

@@ -1,0 +1,6 @@
+/* Navigation CSS */
+.page {
+  height: calc(100% - 48px);
+  width: 100%;
+  padding-top: 48px;
+}
