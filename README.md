@@ -29,7 +29,7 @@ These are the tools that I used. If running the website doesn't work, try matchi
     - This file <i>needs</i> to contain one value.
     - <strong>Required</strong> | To access the Yelp API, we need to give it a valid API key. Put your API key in the `.env` file like this:<br>
       `KEY=MYAPIKEY`
-      "KEY" needs to be all uppercase.
+      "KEY" needs to be all uppercase.<br>
 5. Run the website by running the commmand `docker-compose up --build` in the root directory of the project (Same place as the `docker-compose.yml` file).
     - This may take a few minutes if it has to download the Node.js images.
 6. Frontend will be running at `localhost:3000` with the backend running at `localhost:8080`.
